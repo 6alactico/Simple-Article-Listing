@@ -18,82 +18,76 @@
       body {
         height: 100vh;
       }
-      
+
       h1 {
         text-align: center;
+        margin: 2em auto;
         font-size: 2.25rem;
         font-weight: 600;
-        margin-top: 1em;
       }
 
       .flex-container {
-        max-width: 700px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        gap: 4em;
+        align-items: center;
+        padding: 1em;
+        max-width: 800px;
         margin: auto;
-        padding: 2em 1em;
       }
 
-      .content {
+      .flex-container article {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 4em;
+        justify-content: flex-start;
+        gap: 3em;
+        margin: 2em 0;
+        width: 100%;
+        max-width: 750px;
+      }
+      .seperator {
+        margin-bottom: 2em;
+      }
+      
+      .flex-container article img {
+        border-radius: 12px;
       }
 
       h2 {
-        margin-bottom: 16px;
-        font-size:  1.25rem;
+        font-size: 1.25rem;
         font-weight: 600;
       }
 
-      .description p {
+      p {
+        margin-top: 1em;
         font-size: 0.875rem;
         font-weight: 500;
         color: #4D5562;
       }
-
-      .content img {
-        border-radius: 12px;
-      }
-
-      .seperator {
-        display: block;
-        margin: 1em auto;
-      }
-  
     </style>
   </head>
   <body>
       <div class="flex-container">
         <h1>We release interesting articles about technology</h1>
         <img src="/resources/Seperator.svg" alt="seperator" class="seperator">
-        <article class="content">
-          <img src="/resources/photo_1.png">
+        <article>
+          <img src="/resources/photo_1.png" alt="bed on staircase in the clouds">
           <div class="description">
-            <h2>
-              Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions
-            </h2>
+            <h2>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h2>
             <p>November 12, 2024</p>
           </div>
         </article>
-        <article class="content">
-          <img src="/resources/photo_3.png">
+        <article>
+          <img src="/resources/photo_3.png" alt="glass cube mixed with grass">
           <div class="description">
-            <h2>
-              The Future of AI: How Machine Learning is Revolutionizing Industries
-            </h2>
+            <h2>The Future of AI: How Machine Learning is Revolutionizing Industries</h2>
             <p>November 12, 2024</p>
           </div>
         </article>
-        <article class="content">
-          <img src="/resources/photo_2.png">
+        <article>
+          <img src="/resources/photo_2.png" alt="reflective glass cube">
           <div class="description">
-            <h2>
-              The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work
-            </h2>
+            <h2>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h2>
             <p>November 12, 2024</p>
           </div>
         </article>
