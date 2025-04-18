@@ -3,66 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
-
+    <meta name="description" content="Article Listing">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
     <title>Simple Article Listing | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
       }
 
       body {
         height: 100vh;
       }
-
-      .author-info {
-        font-size: 14px;
+      
+      h1 {
         text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin-top: 1em;
       }
 
-      .author-info a {
-        text-decoration: none;
+      .flex-container {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4em;
+        margin: auto;
+        padding: 2em 1em;
       }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4em;
+      }
+
+      h2 {
+        margin-bottom: 16px;
+        font-size:  1.25rem;
+        font-weight: 600;
+      }
+
+      .description p {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #4D5562;
+      }
+
+      .content img {
+        border-radius: 12px;
+      }
+
+      .seperator {
+        display: block;
+        margin: 1em auto;
+      }
+  
     </style>
   </head>
   <body>
-    <!-- 
-
-      We release interesting articles about technology
-    
-      Unlocking the Power of Cloud Computing
-    
-      A Guide to Scalable Solutions
-    
-      November 12, 2024
-    
-      The Future of AI
-    
-      How Machine Learning is Revolutionizing Industries
-    
-      The Impact of 5G on Business
-    
-      How Faster Networks are Transforming the Way We Work
-    
-    -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+      <div class="flex-container">
+        <h1>We release interesting articles about technology</h1>
+        <img src="/resources/Seperator.svg" alt="seperator" class="seperator">
+        <article class="content">
+          <img src="/resources/photo_1.png">
+          <div class="description">
+            <h2>
+              Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+        <article class="content">
+          <img src="/resources/photo_3.png">
+          <div class="description">
+            <h2>
+              The Future of AI: How Machine Learning is Revolutionizing Industries
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+        <article class="content">
+          <img src="/resources/photo_2.png">
+          <div class="description">
+            <h2>
+              The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+      </div>
   </body>
 </html>
